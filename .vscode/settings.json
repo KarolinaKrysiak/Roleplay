@@ -1,0 +1,7 @@
+{
+    "editor.formatOnSave": true,
+    "editor.minimap.renderCharacters": false,
+    "prettier.endOfLine": "crlf",
+    "prettier.printWidth": 60,
+    "prettier.proseWrap": "always"
+}

@@ -16,64 +16,64 @@
   <body onhashchange="pageChange()">
     <!-- navigation -->
     <header class="main-navigation">
-      <nav class="main-nav">
-        <div class="nav-item">
-          <a href="/">Karolina Krysiak</a>
-        </div>
-        <div class="icons">
-          <a
-            href="https://www.linkedin.com/in/karolina-krysiak-8b3433189/"
-            ><img
-              src="/icons/li.svg"
-              alt="linkedin icon"
-              class="some_image"
-          /></a>
-          <a href="https://www.facebook.com/karolina.krysiak.0123/"
-            ><img
-              src="/icons/fb.svg"
-              alt="facebook icon"
-              class="some_image"
-          /></a>
-        </div>
-        <div class="burger-menu" onclick="openNav()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </nav>
-
-      <!-- The overlay -->
-      <div id="myNav" class="overlay">
-        <!-- Button to close the overlay navigation -->
-        <a
-          href="javascript:void(0)"
-          class="closebtn"
-          onclick="closeNavX()"
-          >&times;</a
-        >
-
-        <!-- Overlay content -->
-        <div class="overlay-content">
-          <a href="/">Home</a>
-          <a href="#about" onclick="closeNav()">About me</a>
-          <a href="#projects" onclick="closeNav()">Projects</a>
-          <a href="/" onclick="closeNav()">Contact</a>
+      <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#news">News</a>
+        <div class="dropdown">
+          <button class="dropbtn">Dropdown
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
         </div>
       </div>
+    
     </header>
 
     <!-- pages -->
     <!-- home page -->
     <section id="main" class="page">
+
+      <section class="landing-section">
+        <img src="img/background.png" class="bg"> 
+<div class="welcome">
+  <h1>
+    Welcome to Fafner Roleplay
+  </h1>
+
+  <p>
+    The purpose of the association is to run "Fafner" for children and young people in order to give them the opportunity to practice role-playing games, live role-playing games and related activities. This should give the children an exciting, varied hobby.
+  </p>
+
+</div>
       </section>
+
+      <sefction>
+<div>
+  <img>
+</div>
+<div>
+  <div>
+    <h2></h2>
+    <p></p>
+  </div>
+  <img>
+</div>
+
+
+      </sefction>
+      
 
 
     </section>
 
 
-    <footer>
+    <!--<footer>
       <p>Copyright © 2020 Rolespilsforeningen Fafner</p>
-    </footer>
+    </footer>-->
 
 
     <!-- SPA functionality  -->
