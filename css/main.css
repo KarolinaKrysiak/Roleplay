@@ -282,8 +282,24 @@ p {
   background-image: url("../img/l3.jpg");
 }
 
-#l4 {
-  background-image: url("../img/l4.jpg");
+/*-- games parallax --*/
+
+#g1 {
+  background-image: url("../img/games.jpg");
+}
+
+#g2 {
+  background-image: url("../img/g2.JPG");
+}
+
+/*-- workshop parallax --*/
+
+#w1 {
+  background-image: url("../img/workshops.jpg");
+}
+
+#w2 {
+  background-image: url("../img/w2.JPG");
 }
 
 @media only screen and (max-device-width: 1366px) {
