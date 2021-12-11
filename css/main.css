@@ -1,0 +1,69 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  max-width: 100%;
+}
+@font-face {
+  font-family: "IMMORTAL";
+  src: url("/fonts/IMMORTAL.ttf");
+}
+
+/* ---------- root variables ---------- */
+:root {
+  --black: #222;
+  --red: #C20028;
+  --grey: #b194f5;
+  --white: #fff;
+  --font-family: "Lato", Lato, Arial, sans-serif;
+}
+
+/* ---------- general styling ---------- */
+
+html {
+  color: var(--text-color-light);
+  font-family: var(--font-family);
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  background-color: var(--black);
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+h1,
+h2 {
+  font-family: "IMMORTAL";
+  font-size: 60px;
+  color: var(--blue);
+}
+
+h3 {
+  font-family: "IMMORTAL";
+}
+
+p {
+  max-width: 600px;
+}
+
+
+
+footer {
+  text-align: center;
+  padding: 1em;
+  font-weight: lighter;
+  font-size: 1em;
+  border-top: solid 1px var(--light-blue);
+  margin-top: 1em;
+}
