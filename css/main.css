@@ -85,7 +85,7 @@ p {
   overflow: hidden;
 }
 
-.dropdown .dropbtn {
+.dropdown .drop-btn {
   font-size: 16px;
   border: none;
   outline: none;
@@ -97,7 +97,7 @@ p {
 }
 
 .navbar a:hover,
-.dropdown:hover .dropbtn {
+.dropdown:hover .drop-btn {
   background-color: var(--red);
 }
 
