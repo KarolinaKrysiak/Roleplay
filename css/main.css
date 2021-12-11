@@ -254,16 +254,36 @@ p {
   background-size: cover;
 }
 
-.f1 {
+/*-- fight club parallax --*/
+
+#f1 {
   background-image: url("../img/fightclub.JPG");
 }
 
-.f2 {
+#f2 {
   background-image: url("../img/f2.jpg");
 }
 
-.f3 {
+#f3 {
   background-image: url("../img/f3.jpg");
+}
+
+/*-- larp parallax --*/
+
+#l1 {
+  background-image: url("../img/LARP.JPG");
+}
+
+#l2 {
+  background-image: url("../img/l2.JPG");
+}
+
+#l3 {
+  background-image: url("../img/l3.jpg");
+}
+
+#l4 {
+  background-image: url("../img/l4.jpg");
 }
 
 @media only screen and (max-device-width: 1366px) {
