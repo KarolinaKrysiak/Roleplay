@@ -212,6 +212,12 @@ p {
 
 /*-- top of the page --*/
 
+.activity-top {
+  padding: 50px 0;
+  background-image: url("../img/forest.png");
+  background-position: center;
+}
+
 .activity-top img {
   height: 200px;
   display: block;
@@ -223,19 +229,41 @@ p {
   text-align: center;
 }
 
+.grey-line {
+  width: 50%;
+  min-width: 400px;
+  display: block;
+  margin: 0 auto -50px;
+}
+
 /*-- article --*/
+.article-element {
+  padding: 50px;
+}
 
 .article-element p {
-  margin: auto;
+  margin: 50px auto;
 }
 
 .parallax {
   background-image: url("../img/fightclub.JPG");
-  min-height: 500px;
+  min-height: 450px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.f1 {
+  background-image: url("../img/fightclub.JPG");
+}
+
+.f2 {
+  background-image: url("../img/f2.jpg");
+}
+
+.f3 {
+  background-image: url("../img/f3.jpg");
 }
 
 @media only screen and (max-device-width: 1366px) {
