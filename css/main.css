@@ -330,6 +330,13 @@ p {
   }
 }
 
+/* ------------ events page ------------ */
+
+.event-section {
+  display: flex;
+  flex-direction: column;
+}
+
 /* ------------ footer styling------------ */
 
 .footer-elements {

@@ -31,15 +31,15 @@ function appendEvents(events) {
         </div>
         <div class="half-activity-section">
 
-  <div>
-    <h3>${event.name}</h3>
-    <p>${event.date}</p>
-    <p>${event.description}</p>
-  </div>
+          <div>
+            <h3>${event.name}</h3>
+            <p>${event.date}</p>
+            <p>${event.description}</p>
+          </div>
  
-  <a href="${event.link}"><img class="btn" src="icons/btn.png"></a>
-</div>
-        <section class="activity-section">
+          <a href="${event.link}"><img class="btn" src="icons/btn.png"></a>
+        </div>
+  </section>
     `;
   }
   document.querySelector("#event-section").innerHTML = htmlTemplate;
