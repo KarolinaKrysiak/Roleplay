@@ -44,3 +44,18 @@ function appendEvents(events) {
   }
   document.querySelector("#event-section").innerHTML = htmlTemplate;
 }
+
+
+/* MAP API */
+let map;
+
+function initMap() {
+  map = new google.maps.Map(document.getElementById("map"), {
+    zooms: 8,
+    center: {
+      lat: 56.06541438464884,
+      lng: 9.85778763833258
+    },
+    mapId: '5f30455d0db8305'
+  });
+}
