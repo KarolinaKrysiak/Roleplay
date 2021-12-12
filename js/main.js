@@ -25,7 +25,7 @@ function appendEvents(events) {
   let htmlTemplate = "";
   for (let event of events) {
     htmlTemplate += /*html*/ `
-      <section class="activity-section">
+      <section class="activity-section" style="height:450px">
         <div class="half-activity-section">
             <img src="${event.img}" class="img-half">
         </div>
@@ -40,6 +40,8 @@ function appendEvents(events) {
           <a href="${event.link}"><img class="btn" src="icons/btn.png"></a>
         </div>
   </section>
+  <img alt="grey line" src="icons/line.png" class="line-events">
+
     `;
   }
   document.querySelector("#event-section").innerHTML = htmlTemplate;

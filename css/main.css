@@ -358,10 +358,20 @@ p {
 }
 
 /* ------------ events page ------------ */
+#events h3 {
+  margin: 50px;
+}
 
 .event-section {
   display: flex;
   flex-direction: column;
+}
+
+.line-events {
+  width: 50%;
+  min-width: 400px;
+  display: block;
+  margin: 50px auto;
 }
 
 /* ------------ footer styling------------ */
