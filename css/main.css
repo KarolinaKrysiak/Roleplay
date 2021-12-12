@@ -261,6 +261,32 @@ p {
   background-size: cover;
 }
 
+/*-- games list --*/
+.games-list {
+  margin-top: 100px;
+  height: 800px;
+  background-image: url("../icons/paper.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.games-list h3 {
+  color: var(--black);
+}
+
+.games-list p {
+  color: var(--black);
+}
+
+.games-list li {
+  color: var(--black);
+}
+
 .newsletter-container {
   background-image: url("../img/fightclub.JPG");
   max-width: 600px;
