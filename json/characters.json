@@ -1,5 +1,6 @@
 [
     {
+        "id": 0,
         "img":"#",
       "name": "Baron Samedi",
       "occupation": "Lord of the dead and fertility",
@@ -14,6 +15,7 @@
     ]
     },
     {
+        "id": 1,
         "img":"#",
         "name": "Demon Squad",
         "occupation": "occult, paranormal and supernatural phenomena",
@@ -27,6 +29,7 @@
     ]
     },
     {
+        "id": 2,
         "img":"#",
         "name": "Kromutter",
         "occupation": "Goblin Shaman and chrome nut",
