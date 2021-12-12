@@ -7,6 +7,7 @@
   border: 0;
   max-width: 100%;
 }
+
 @font-face {
   font-family: "IMMORTAL";
   src: url("/fonts/IMMORTAL.ttf");
@@ -58,6 +59,8 @@ h3 {
   font-family: "IMMORTAL";
   color: var(--white);
   font-size: 40px;
+  text-align: center;
+  max-width: 600px;
 }
 
 h4 {
@@ -202,6 +205,7 @@ p {
   display: block;
   margin: auto;
 }
+
 .icon {
   height: 120px;
   display: block;
@@ -241,6 +245,10 @@ p {
   padding: 50px;
 }
 
+.article-element h3 {
+  margin: 50px auto;
+}
+
 .article-element p {
   margin: 50px auto;
 }
@@ -253,6 +261,14 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.newsletter-container {
+  background-image: url("../img/fightclub.JPG");
+  max-width: 600px;
+  margin: 100px auto;
+}
+
+.newsletter-container button {}
 
 /*-- fight club parallax --*/
 
@@ -305,5 +321,11 @@ p {
 @media only screen and (max-device-width: 1366px) {
   .parallax {
     background-attachment: scroll;
+  }
+}
+
+@media screen and (max-device-width: 800px) {
+  .activity-section {
+    flex-direction: column;
   }
 }
