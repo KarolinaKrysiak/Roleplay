@@ -1,0 +1,38 @@
+[
+    {
+        "img":"#",
+      "name": "Baron Samedi",
+      "occupation": "Lord of the dead and fertility",
+      "skills": "Necromancy, Black magic, teleportation, revive, license inventions of blue magic, healing powers",
+      "hobbies": "Drinking, Smoking, gangs, total obscenity language and behavior, crimes, stalking, Kidnapping, Oppression",
+      "alignment": "Villain",
+      "type": "Paranormal God of Death",
+      "description": ["Forget what you think you know. There is a life after death and Baron Samedi will be your guide. So come along and let Baron Samedi   show you the wonders of a whole new world and that even a god of death can be the life of the party.After all, what do you have to lose?",
+    "Who is he then, this Baron Samedi! In addition to being lord of the dead, Baron Samedi is also a giver of the living. He can cure any deadly disease or wound if he thinks it is worth it. His powers are extremely large and impressive when it comes to voodoo curses and black magic. Even if someone has been hit by a witch who brings them to the brink of death, they will not die if the Baron refuses to dig their grave. As long as this mighty and influential man keeps them above the ground, they are safe. He also ensures that all the corpses rot in the ground to stop any soul from being brought back as a stupid, brain dead, and unintelligent zombie.",
+"What he demands in return depends on his mood. Sometimes, he is happy and content if his followers wore black, white or purple clothes or wore a sacred object; he can also simply ask for a small gift in the form of cigars, rum, black coffee, grilled peanuts, or bread.",
+"But sometimes the Baron requires a voodoo ceremony to help you cross over into this world."
+    ]
+    },
+    {
+        "img":"#",
+        "name": "Demon Squad",
+        "occupation": "occult, paranormal and supernatural phenomena",
+        "skills": "curses, sorcery, witchcraft",
+        "hobbies": "chaos, evil, human sacrifice",
+        "alignment": "Villain",
+        "type": "chaos and evil demons",
+        "description": ["After years of fieldwork among mortals, members of the Demon Squad take a two-year technical course in the gaping void between deep-frozen Niflheim and scalded Muspelheim; where they are promoted to disturb the living and the dead; bring nightmares; brings of famine and drought; and to be a mixture of disease, limbo and death.",
+        "'Either way, it brings a new hell.'",
+        "A full psychiatric assessment and profile has not been performed on Demon Squad, although observations indicate that they are violent, unstable and egomaniacal individuals."
+    ]
+    },
+    {
+        "img":"#",
+        "name": "Kromutter",
+        "occupation": "Goblin Shaman and chrome nut",
+        "skills": "Goblin Shaman, magic, spiritual guidance, interpretation of nature's warnings, lvaer mixture and healing ointment for the wounded; abilities as a shape changer",
+        "hobbies": "Drinking, Smoking, card games and food in all guises        ",
+        "alignment": "Anti-villain",
+        "type": "Paranormal God of Death"
+    }
+  ]
