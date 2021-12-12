@@ -32,8 +32,8 @@ function appendEvents(events) {
         <div class="half-activity-section">
 
           <div>
-            <h3>${event.name}</h3>
-            <p>${event.date}</p>
+            <h4>${event.name}</h4>
+            <p style="text-align: center;">${event.date}</p>
             <p>${event.description}</p>
           </div>
  

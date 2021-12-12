@@ -64,6 +64,13 @@ h3 {
 
 h4 {
   font-family: "IMMORTAL";
+  font-size: 30px;
+  color: var(--white);
+}
+
+h5 {
+  font-family: "IMMORTAL";
+  font-size: 25px;
   color: var(--white);
 }
 
@@ -187,6 +194,10 @@ p {
 .half-activity-section h3 {
   text-align: center;
   margin-top: 30px;
+}
+
+.half-activity-section h4 {
+  text-align: center;
 }
 
 .half-activity-section p {
