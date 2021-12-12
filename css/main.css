@@ -157,8 +157,10 @@ p {
 }
 
 /*------------- old paper page ------------*/
+
 .papirus {
   margin-top: 100px;
+  margin-bottom: 70px;
   height: 800px;
   width: auto;
   background-image: url("../icons/paper.png");
@@ -168,58 +170,25 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  overflow: auto;
+  padding: 100px;
 }
 
-.papirus h3 {
-  color: var(--black);
-}
-
-.papirus p {
-  color: var(--black);
-  max-width: 400px;
-}
-
+.papirus h3,
+.papirus h5,
+.papirus p,
 .papirus li {
   color: var(--black);
   max-width: 400px;
 }
 
-.papirus-scroll {
-  margin-top: 100px;
-  height: 800px;
-  width: auto;
-  background-image: url("../icons/paper.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  overflow: auto;
-  padding: 100px;
-}
-
-.papirus-scroll h3,
-.papirus-scroll h5,
-.papirus-scroll p,
-.papirus-scroll li {
-  color: var(--black);
-  max-width: 400px;
-}
-
-.papirus-scroll h3 {
-  margin-top: 650px;
-}
-
-.papirus-scroll h5 {
+.papirus h5 {
   text-align: center;
   margin-bottom: 50px;
 }
 
-.papirus-scroll p,
-.papirus-scroll ul {
+.papirus p,
+.papirus ul {
   margin-bottom: 30px;
 }
 
