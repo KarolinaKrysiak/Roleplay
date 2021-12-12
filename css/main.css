@@ -314,13 +314,26 @@ p {
   margin: 100px auto;
 }
 
-.newsletter-container button {
-}
+.newsletter-container button {}
 
 /*Contact*/
 .headquarters {
   background-image: url("../img/fightclub.JPG");
 }
+
+/*Team*/
+.members {
+  display: block;
+}
+
+.single-member {
+  display: flex;
+}
+
+.single-member-image {}
+
+.single-member-text {}
+
 /*Map*/
 #map {
   width: 100%;
