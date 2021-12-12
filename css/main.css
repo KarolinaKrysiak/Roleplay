@@ -268,7 +268,8 @@ p {
   margin: 100px auto;
 }
 
-.newsletter-container button {}
+.newsletter-container button {
+}
 
 /*-- fight club parallax --*/
 
@@ -328,4 +329,17 @@ p {
   .activity-section {
     flex-direction: column;
   }
+}
+
+/* ------------ footer styling------------ */
+
+.footer-elements {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 50px;
+}
+
+.footer-element {
+  margin: 0 30px;
 }
