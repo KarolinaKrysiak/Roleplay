@@ -156,6 +156,73 @@ p {
   height: 100px;
 }
 
+/*------------- old paper page ------------*/
+.papirus {
+  margin-top: 100px;
+  height: 800px;
+  width: auto;
+  background-image: url("../icons/paper.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.papirus h3 {
+  color: var(--black);
+}
+
+.papirus p {
+  color: var(--black);
+  max-width: 400px;
+}
+
+.papirus li {
+  color: var(--black);
+  max-width: 400px;
+}
+
+.papirus-scroll {
+  margin-top: 100px;
+  height: 800px;
+  width: auto;
+  background-image: url("../icons/paper.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  overflow: auto;
+  padding: 100px;
+}
+
+.papirus-scroll h3,
+.papirus-scroll h5,
+.papirus-scroll p,
+.papirus-scroll li {
+  color: var(--black);
+  max-width: 400px;
+}
+
+.papirus-scroll h3 {
+  margin-top: 650px;
+}
+
+.papirus-scroll h5 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.papirus-scroll p,
+.papirus-scroll ul {
+  margin-bottom: 30px;
+}
+
 /* ------------ section 1 ------------ */
 
 .landing-section {
@@ -272,32 +339,6 @@ p {
   background-size: cover;
 }
 
-/*-- games list --*/
-.games-list {
-  margin-top: 100px;
-  height: 800px;
-  background-image: url("../icons/paper.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-.games-list h3 {
-  color: var(--black);
-}
-
-.games-list p {
-  color: var(--black);
-}
-
-.games-list li {
-  color: var(--black);
-}
-
 .newsletter-container {
   background-image: url("../img/fightclub.JPG");
   max-width: 600px;
@@ -308,8 +349,8 @@ p {
 }
 
 /*Contact*/
-.headquarters{
-  background-image: url("../img/fightclub.JPG")
+.headquarters {
+  background-image: url("../img/fightclub.JPG");
 }
 /*Map*/
 #map {
