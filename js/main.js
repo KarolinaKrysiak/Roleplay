@@ -4,6 +4,7 @@
 global variable: _allEvents
 */
 let _allEvents = [];
+let _characters = [];
 
 /*
 Fetches json data from the file events.json
@@ -45,6 +46,35 @@ function appendEvents(events) {
     `;
   }
   document.querySelector("#event-section").innerHTML = htmlTemplate;
+}
+
+/*
+Fetches json data from the file characters.json
+*/
+async function fetchData() {
+  const response = await fetch('json/characters.json');
+  const data = await response.json();
+  _characters = data;
+  console.log(_characters);
+  appendCharacters(_characters);
+
+}
+
+fetchData();
+
+function appendCharacters(characters) {
+  let htmlTemplate = "";
+  for (let character of characters) {
+    htmlTemplate += /*html*/`
+      <article>
+        <article onclick="showDetailView(${character.id})">
+          <img src="${character.img}">
+          <h5>${character.name}</h5>
+        </article>
+      </article>
+    `;
+  }
+  document.querySelector('#characters-grid').innerHTML = htmlTemplate;
 }
 
 
