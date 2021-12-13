@@ -78,6 +78,14 @@ p {
   max-width: 600px;
   color: var(--white);
 }
+ul {
+  list-style-type: none;
+}
+
+li:before {
+  content: "➼";
+  padding-right: 10px;
+}
 
 /* ---------- navbar ---------- */
 
@@ -190,6 +198,10 @@ p {
 .papirus p,
 .papirus ul {
   margin-bottom: 30px;
+}
+
+.papirus a {
+  color: var(--black);
 }
 
 /* ------------ section 1 ------------ */
@@ -314,7 +326,8 @@ p {
   margin: 100px auto;
 }
 
-.newsletter-container button {}
+.newsletter-container button {
+}
 
 /*Contact*/
 .headquarters {
@@ -332,16 +345,17 @@ p {
   display: flex;
 }
 
-.single-member-image {}
+.single-member-image {
+}
 
-.single-member-text {}
+.single-member-text {
+}
 
 /*Map*/
 #map {
   width: 100%;
   height: 60vh;
 }
-
 
 /*-- fight club parallax --*/
 
