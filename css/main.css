@@ -589,6 +589,10 @@ li:before {
 footer {
   box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.3);
 }
+footer h4 {
+  text-align: center;
+  margin-bottom: 30px;
+}
 
 .footer-elements {
   display: flex;
@@ -601,6 +605,33 @@ footer {
   margin: 0 30px;
 }
 
+/* contact part */
+.contact-element p {
+  margin-bottom: 15px;
+}
+
+/* facebook part */
+.fb-group {
+  display: block;
+  width: 300px;
+  height: 300px;
+  background-color: var(--white);
+  border-radius: 3px;
+}
+
+.fb-img-container {
+  width: 300px;
+  height: 150px;
+  border-radius: 3px;
+}
+.fb-img {
+  max-height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 3px;
+}
+
+/* map part */
 .footer-map {
   width: 20%;
   height: 20%;
