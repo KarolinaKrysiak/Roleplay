@@ -1,5 +1,24 @@
 "use strict";
 
+/* Open when someone clicks on the span element */
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+/* Close when someone clicks on the "x" symbol inside the overlay */
+function closeNavX() {
+  document.getElementById("myNav").style.width = "0%";
+}
+
+/* Close when someone clicks on the lnk inside the overlay */
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+  window.scroll({
+    top: 0,
+    left: 0,
+  });
+}
+
 /*
 global variables
 */
@@ -74,12 +93,14 @@ function appendCharacters(characters) {
   let htmlTemplate = "";
   for (let character of characters) {
     htmlTemplate += /*html*/ `
-      <article>
-        <article onclick="showDetailView(${character.id})">
-          <img src="${character.img}">
+      
+        <article class="character-article" onclick="showDetailView(${character.id})">
+          <div class="character-div">
+          <img class="character-pic" src="${character.img}">
+  </div>
           <h5>${character.name}</h5>
         </article>
-      </article>
+    
     `;
   }
   document.querySelector('#characters-grid').innerHTML = htmlTemplate;
@@ -197,3 +218,4 @@ function setAttributeNode() {
   att.value = "item.img";
   a.setAttributeNode(att);
 }
+/* -------- calendar ----------*/

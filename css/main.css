@@ -165,6 +165,129 @@ li:before {
   height: 100px;
 }
 
+@media (max-width: 900px) {
+  .navbar {
+    display: none;
+  }
+}
+
+/* ---------- mobile navbar ---------- */
+
+.mobile-menu {
+  position: fixed;
+  z-index: 50;
+  width: 100%;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+}
+
+.mobile-logo {
+  height: 70px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+.burger-menu {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 30px;
+  cursor: pointer;
+}
+
+.burger-menu span {
+  width: 40px;
+  height: 5px;
+  display: block;
+  background: var(--white);
+}
+.burger-menu:hover span {
+  background: var(--red);
+}
+
+@media (min-width: 900px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+
+/* ---- overlay ----*/
+
+/* The Overlay (background) */
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 9999;
+  right: 0;
+  top: 0;
+  background-color: var(--black);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 15%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* The navigation links inside the overlay */
+.overlay a,
+.overlay span {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: var(--white);
+  display: block;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.overlay a:hover,
+.overlay a:focus,
+.overlay span:hover,
+.overlay span:focus {
+  color: var(--red);
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+.mobile-membership {
+  width: 350px;
+  display: block;
+  margin: 10px auto;
+}
+@media (min-width: 900px) {
+  .mobile-membership {
+    display: none;
+  }
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
 /*------------- old paper page ------------*/
 
 .papirus {
@@ -365,6 +488,7 @@ li:before {
 #map {
   width: 100%;
   height: 60vh;
+  margin: 100px 0;
 }
 
 /*-- fight club parallax --*/
@@ -446,10 +570,39 @@ li:before {
 
 /* ------------ niebelungen page ------------ */
 
+.characters {
+  margin: 100px;
+  text-align: center;
+}
+
+#characters-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 1em;
+  gap: 1em;
+  max-width: 1000px;
+  margin: 0 auto 50px;
+}
+
+@media (max-width: 600px) {
+  #characters-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.character-pic {
+  height: 300px;
+  width: auto;
+}
+
 /* ------------ footer styling------------ */
 
 footer {
   box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.3);
+}
+footer h4 {
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .footer-elements {
@@ -463,7 +616,45 @@ footer {
   margin: 0 30px;
 }
 
+/* contact part */
+.contact-element p {
+  margin-bottom: 15px;
+}
+
+.contact-element a {
+  color: var(--white);
+  font-weight: bold;
+}
+
+/* facebook part */
+.fb-group {
+  display: block;
+  width: 300px;
+  height: 300px;
+  background-color: var(--white);
+  border-radius: 3px;
+}
+
+.fb-img-container {
+  width: 300px;
+  height: 150px;
+  border-radius: 3px;
+}
+.fb-img {
+  max-height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 3px;
+}
+
+/* map part */
 .footer-map {
   width: 20%;
   height: 20%;
+}
+
+@media (max-width: 900px) {
+  .footer-elements {
+    flex-direction: column;
+  }
 }

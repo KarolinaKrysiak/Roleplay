@@ -9,7 +9,8 @@
   <meta name="author" content="#" />
   <link rel="stylesheet" href="css/main.css" />
   <link rel="shortcut icon" type="image/png" href="icons/logo-small.png" />
-
+  <link href="calendar/calendar.css" rel="stylesheet">
+  <script async src="calendar/calendar.js"></script>
 </head>
 
 <body onhashchange="pageChange()">
@@ -49,6 +50,47 @@
       <a href="https://www.foreninglet.dk/teamenrollment/index/092039734f60d5d/8415"><img class="membership"
           src="icons/membership.png" alt="Become member button"></a>
     </div>
+
+    <div class="mobile-menu">
+      <div>
+    <div class="nav-item">
+      <a href="/"><img class="mobile-logo" src="icons/logo.png" alt="Fafner logo"></a>
+    </div>
+    <div class="burger-menu" onclick="openNav()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    </div>
+     <!-- The overlay -->
+     <div id="myNav" class="overlay">
+      <!-- Button to close the overlay navigation -->
+      <a
+        href="javascript:void(0)"
+        class="closebtn"
+        onclick="closeNavX()"
+        >&times;</a
+      >
+      <!-- Overlay content -->
+      <div class="overlay-content">
+        <a href="/">Home</a>
+        <a href="#fight-club" onclick="closeNav()">Fight Club</a>
+        <a href="#larp" onclick="closeNav()">LARP</a>
+        <a href="#games" onclick="closeNav()">Tabletop Games</a>
+        <a href="#workshops" onclick="closeNav()">Workshops</a>
+        <a href="#events" onclick="closeNav()">Events</a>
+        <a href="#niebelungen" onclick="closeNav()">Niebelungen</a>
+        <a href="#other" onclick="closeNav()">Other</a>
+        <a href="#gallery" onclick="closeNav()">Gallery</a>
+        <a href="#info" onclick="closeNav()">Practical Information</a>
+        <a href="#contact" onclick="closeNav()">Contact</a>
+        <a href="#team" onclick="closeNav()">The Team</a>
+        <a href="https://www.foreninglet.dk/teamenrollment/index/092039734f60d5d/8415"><img class="mobile-membership"
+          src="icons/membership.png" alt="Become member button"></a>
+      </div>
+    </div>
+  </div>
+
   </header>
 
 
@@ -70,6 +112,8 @@
           opportunity to practice role-playing games, live role-playing games and related activities. This should give
           the children an exciting, varied hobby.
         </p>
+        <a href="https://www.foreninglet.dk/teamenrollment/index/092039734f60d5d/8415"><img class="mobile-membership"
+          src="icons/membership.png" alt="Become member button"></a>
 
       </div>
     </section>
@@ -525,6 +569,27 @@
     <section id="event-section">
     </section>
 
+    <div id="cal-wrap">
+      <!-- (A) PERIOD SELECTOR -->
+      <div id="cal-date">
+        <select id="cal-mth"></select>
+        <select id="cal-yr"></select>
+      </div>
+
+      <!-- (B) CALENDAR -->
+      <div id="cal-container"></div>
+
+      <!-- (C) EVENT FORM -->
+      <form id="cal-event">
+        <h1 id="evt-head"></h1>
+        <div id="evt-date"></div>
+        <textarea id="evt-details" required></textarea>
+        <input id="evt-close" type="button" value="Close"/>
+        <input id="evt-del" type="button" value="Delete"/>
+        <input id="evt-save" type="submit" value="Save"/>
+      </form>
+    </div>
+
 
   </section>
 
@@ -678,20 +743,14 @@
 
     <img alt="grey line" src="icons/line.png" class="grey-line">
 
+    <div class="characters">
     <h3>Niebelungen</h3>
     <h5>Consistent character & Game Marshals</h5>
+    </div>
 
     <div id="characters-grid">
     </div>
 
-
-    <img alt="grey line" src="icons/line.png" class="grey-line">
-
-    <h3>Niebelungen</h3>
-    <h5>Consistent character & Game Marshals</h5>
-
-    <div class="characters-grid">
-    </div>
   </section>
 
   <section id="detail-view" class="page">
@@ -926,23 +985,25 @@
   <!----------------- FOOTER ----------------->
   <footer>
     <div class="footer-elements">
-      <div class="footer-element">
+      <div class="footer-element contact-element">
         <h4>Contact Us</h4>
-        <p>The role-playing game association Fafner</p>
+        <p style="font-weight: bold;">The role-playing game association Fafner</p>
         <p>Bjedstrupvej 1, 8660 Skanderborg</p>
-        <p>e-mail: fafnerforening@gmail.com </p>
+        <p>E-mail: <a href = "mailto: Johan@kirstinelund.dk">fafnerforening@gmail.com</a> </p>
         <p>CVR number: 34399697</p>
         <p>MobilePay: 444949</p>
       </div>
       <div>
         <h4>Facebook Group</h4>
-        <div class="footer-element">
-          <img>
-          <h4></h4>
-          <p></p>
-          <a></a>
+        <div class="footer-element fb-group">
+          <div class="fb-img-container">
+          <img class="fb-img" alt="picture from facebook group" src="img/fb-pic.jpg">
+        </div>
+          <h4>Fafner-Rollespil</h4>
+          <p>Public group</p>
+          <a href="https://www.facebook.com/groups/fafnerrollespil">Join Group</a>
           <div></div>
-          <p></p>
+          <p>For medlemmer af Rollespilsforeningen Fafer - og deres voksne.</p>
         </div>
       </div>
       <div class="footer-element">
@@ -959,6 +1020,8 @@
   <script src="js/spa.js"></script>
   <!-- main js file -->
   <script src="js/main.js"></script>
+  <!-- calendar -->
+  <script src="js/calendar.js"></script>
 </body>
 
 </html>
