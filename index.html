@@ -9,6 +9,7 @@
   <meta name="author" content="#" />
   <link rel="stylesheet" href="css/main.css" />
   <link rel="shortcut icon" type="image/png" href="#" />
+
 </head>
 
 <body onhashchange="pageChange()">
@@ -660,19 +661,15 @@
       </p>
     </div>
 
- <!-- separating styled line -->
+    <!-- separating styled line -->
 
- <img alt="grey line" src="icons/line.png" class="grey-line">
+    <img alt="grey line" src="icons/line.png" class="grey-line">
 
- <h3>Niebelungen</h3>
-      <h5>Consistent character & Game Marshals</h5>
+    <h3>Niebelungen</h3>
+    <h5>Consistent character & Game Marshals</h5>
 
-      <div class="characters-grid">
-      </div>
-    
-
-
-
+    <div class="characters-grid">
+    </div>
   </section>
 
 
@@ -738,14 +735,49 @@
 
     <div class="papirus">
       <h3>Newsletter</h3>
-      <p>txt</p>
-      <button type="button" class="next-page-btn">Next page ></button>
+      <p>Kære Venner<br><br>
+        Vi er så klar efter alt for lang tid uden rollespil. Vi har igen live events plus Fafner Fight Club på menuen.
+        Det bliver lidt anderledes end vi er vant til pga. ..ja, I ved.<br><br>
+        Søndag den 9. maj og den 13. juni genoptager vi vores eget klassisk fantasy univers kaldet ”Niebelungen” hvor
+        man kan opleve sære væsner, sjove opgaver, mærkelige skrifter og drabelige slag. Her kan alle være med, det
+        anbefales dog at børn under 2. klasse kommer ifølge med voksne, da der sandsynligvis er uhyrer i skoven!
+        <br><br>
+        Niebelungen finder sted hver den anden søndag i måneden og ud over her på hjemmesiden kan man også læse
+        historien, følge med i udviklingen, få spor og trailere osv. på Fafners facebook gruppeside<br><br>
+        Niebelungen spillene koster penge at deltage i , 80 kr for ikke medlemmer og 20 kr for medlemmer, selvom der
+        står gratis på facebook begivenheden.<br><br>
+        Mandag den 12. april genstarter Fafner Fight Club som vores kamptræning. Vi mødes en gang om ugen, nærmere
+        bestemt mandage fra 17 til 18, og slås.<br><br>
+        Vi træner kamp med de bløde rollespilsvåben i alle sammen kender, men også en del andre kampformer. Det kan være
+        alt fra stuntkamp , over kendo og bartitsu til stålvåben og træskjolde. Vi passer selvfølgelig på hinanden og
+        bære passende beskyttelses udstyr.<br><br>
+        Fightclubben er åben for alle medlemmer af Fafner rollespil. Medbring trænings tøj, drikkedunk og gerne også
+        nogle<br><br>
+        hansker af en eller anden slags (fingrene er altid udsatte og det går væsentligt mindre ondt at få et rap over
+        nallerne hvis man har hansker på) Hvis man har egne våben med er det fint, ellers låner man bare af os.<br><br>
+        Normalerweize (uden corona restriktioner) holder Fafner forskellige workshops,<br><br>
+        bordrollespil, brætspilsdage og -aftner/nætter for vores medlemmer. Og kan man selv samle en gruppe er man
+        velkommen til at låne HQ.<br><br>
+        Og ja: De voksne i Fafner mødes ind i mellem og spille poker, hjerterfri og blackjack. Og nej vi spiller ikke om
+        penge - kun æren.<br><br>
+        Ud over det allerede nævnte; har vi faktisk også et par One Shot arrangementer til jer i efteråret.<br><br>
+        Vi får brug for al den hjælp vi kan få til det her da formen kræver nogle flere spilledere/voksne end vi er vant
+        til, så hvis der sidder nogle forældre derude som har lyst til at gi' en hånd så hold jer endelig ikke tilbage.
+        <br><br>
+        Skriv til johan@kirstinelund.dk hvis i har lyst til at lege med<br><br>
+        Vi har kørt meget af vores kommunikation igennem facebook på det sidste og vi ved godt at det ikke nødvendigvis
+        er
+        den smarteste måde at nå ud til alle på. Derfor har vi lavet en ny hjemmeside til foreningen.<br><br>
+        Vi ses
+        Vh Johan<br><br>
+        Formand for Fafner Rollespil
+
+      </p>
     </div>
   </section>
 
 
-  <!----------------- contact page ----------------->
-
+  <!----------------- CONATACT PAGE ----------------->
   <section id="contact" class="page">
 
     <!-- top of the page with background -->
@@ -787,13 +819,49 @@
     </div>
 
     <div id="map"></div>
+    <script>
+      function initMap() {
+        // Map options
+        let options = {
+          zoom: 14,
+          center: {
+            lat: 56.06548026722279,
+            lng: 9.857809096005338
+          },
+          mapId: '5f30455d0db8305'
+        }
+
+        // New map
+        let map = new google.maps.Map(document.getElementById('map'), options);
+        // Add marker
+        let marker = new google.maps.Marker({
+          position: {
+            lat: 56.06548026722279,
+            lng: 9.857809096005338
+          },
+          map: map,
+          icon: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png'
+        });
+
+        let infoWindow = new google.maps.InfoWindow({
+          content: '<p><b>Rollespilsforeningen Fafner</b><br>Bjedstrupvej 1<br> 8660 Skanderborg>br>Denmark<br><a href="https://g.page/rollespilsforeningen-fafner?share">View on Google Maps></a></p>'
+        });
+
+        marker.addListener('click', function () {
+          infoWindow.open(map, marker);
+        });
+      }
+    </script>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDF4FDPXA31mnvIyBXwsiq3e8S27d0qxfY&map_ids=5f30455d0db8305&callback=initMap&v=weekly">
+    </script>
+
 
 
   </section>
 
 
-  <!----------------- team page ----------------->
-
+  <!----------------- TEAM PAGE ----------------->
   <section id="team" class="page">
     <!-- top of the page with background -->
     <div class="activity-top">
@@ -812,24 +880,14 @@
       </p>
       <img alt="grey line" src="icons/line.png" class="grey-line">
 
-      <div class="members">
-        <div class="single-member">
-          <div class="single-member-image">
-            <img alt="team-member" src="">
-          </div>
-          <div class="single-member-text">
-            <h4></h4>
-            <p></p>
-          </div>
-        </div>
-      </div>
 
+      <div class="members" id="members"></div>
     </div>
   </section>
 
 
 
-  <!----------------- footer ----------------->
+  <!----------------- FOOTER ----------------->
   <footer>
     <div class="footer-elements">
       <div class="footer-element">
@@ -861,10 +919,11 @@
 
 
 
+
   <!-- MAP JS -->
   <script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDF4FDPXA31mnvIyBXwsiq3e8S27d0qxfY&map_ids=5f30455d0db8305&callback=initMap&v=weekly"
-    async></script>
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDF4FDPXA31mnvIyBXwsiq3e8S27d0qxfY&map_ids=5f30455d0db8305&callback=initMap&v=weekly">
+  </script>
 
   <!-- SPA functionality  -->
   <script src="js/spa.js"></script>

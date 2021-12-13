@@ -48,16 +48,41 @@ function appendEvents(events) {
 }
 
 
-/* MAP API */
-let map;
 
-function initMap() {
-  map = new google.maps.Map(document.getElementById("map"), {
-    zooms: 8,
-    center: {
-      lat: 56.06541438464884,
-      lng: 9.85778763833258
-    },
-    mapId: '5f30455d0db8305'
-  });
+/*
+global variable: _allEvents
+*/
+let _allEvents = [];
+/**/
+async function fetchEvents() {
+  let response = await fetch('json/events.json');
+  let data = await response.json();
+  _allEvents = data;
+  appendEvents(_allEvents);
+}
+
+fetchEvents();
+
+/*
+Appends json data to the DOM
+*/
+function appendEvents(events) {
+  let htmlTemplate = "";
+  for (let event of events) {
+    htmlTemplate += /*html*/ `
+      
+        <div class="single-member">
+          <div class="single-member-image">
+            <img alt="team-member" src="${event.img}" >
+          </div>
+          <div class="single-member-text">
+            <h4>${event.name}</h4>
+            <p>${event.description}</p>
+          </div>
+        </div>
+     
+
+    `;
+  }
+  document.querySelector("#members").innerHTML = htmlTemplate;
 }
