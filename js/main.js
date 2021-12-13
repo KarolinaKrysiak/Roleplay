@@ -154,8 +154,7 @@ function appendMembers(members) {
 const URL =
   "json/data.json";
 document.addEventListener("DOMContentLoaded", () => {
-  //set up the IntersectionObserver to load more images if the footer is visible.
-  //URL - https://gist.githubusercontent.com/prof3ssorSt3v3/1944e7ba7ffb62fe771c51764f7977a4/raw/c58a342ab149fbbb9bb19c94e278d64702833270/infinite.json
+
   let options = {
     root: null,
     rootMargins: "0px",
@@ -174,6 +173,17 @@ function handleIntersect(entries) {
   }
 }
 
+
+function setClass() {
+  let x = document.getElementById("content");
+  let y = x.getElementsByTagName("a");
+  let i;
+  for (i = 0; i < y.length; i++) {
+    y[i].setAttribute("href", "https://gifimage.net/wp-content/uploads/2018/04/rick-astley-dancing-gif-7.gif");
+  }
+}
+
+
 function getData() {
   let content = document.getElementById("content");
   fetch(URL)
@@ -181,11 +191,13 @@ function getData() {
     .then(data => {
       // data.items[].img, data.items[].name
       data.items.forEach(item => {
-        let fig = document.createElement("a");
+        let imageContainer = document.createElement("a");
         let img = document.createElement("img");
         img.src = item.img;
-        fig.appendChild(img);
-        content.appendChild(fig);
+        imageContainer.appendChild(img);
+        content.appendChild(imageContainer);
+
+        setClass();
       });
     });
 }
