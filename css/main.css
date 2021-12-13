@@ -610,6 +610,11 @@ footer h4 {
   margin-bottom: 15px;
 }
 
+.contact-element a {
+  color: var(--white);
+  font-weight: bold;
+}
+
 /* facebook part */
 .fb-group {
   display: block;
