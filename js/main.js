@@ -1,24 +1,5 @@
 "use strict";
 
-/* Open when someone clicks on the span element */
-function openNav() {
-  document.getElementById("myNav").style.width = "100%";
-}
-
-/* Close when someone clicks on the "x" symbol inside the overlay */
-function closeNavX() {
-  document.getElementById("myNav").style.width = "0%";
-}
-
-/* Close when someone clicks on the lnk inside the overlay */
-function closeNav() {
-  document.getElementById("myNav").style.width = "0%";
-  window.scroll({
-    top: 0,
-    left: 0,
-  });
-}
-
 /*
 global variables
 */
@@ -93,14 +74,12 @@ function appendCharacters(characters) {
   let htmlTemplate = "";
   for (let character of characters) {
     htmlTemplate += /*html*/ `
-      
-        <article class="character-article" onclick="showDetailView(${character.id})">
-          <div class="character-div">
-          <img class="character-pic" src="${character.img}">
-  </div>
+      <article>
+        <article onclick="showDetailView(${character.id})">
+          <img src="${character.img}">
           <h5>${character.name}</h5>
         </article>
-    
+      </article>
     `;
   }
   document.querySelector('#characters-grid').innerHTML = htmlTemplate;
@@ -197,7 +176,6 @@ function handleIntersect(entries) {
 
 function getData() {
   let content = document.getElementById("content");
-  console.log("fetch some JSON data");
   fetch(URL)
     .then(response => response.json())
     .then(data => {
@@ -211,11 +189,3 @@ function getData() {
       });
     });
 }
-
-function setAttributeNode() {
-  let a = document.getElementsByTagName("a")[0];
-  let att = document.createAttribute("href");
-  att.value = "item.img";
-  a.setAttributeNode(att);
-}
-/* -------- calendar ----------*/
