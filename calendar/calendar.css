@@ -1,13 +1,32 @@
+:root {
+  --black: #222;
+  --red: #c20028;
+  --grey: #7a7a7a;
+  --light-grey: #a7a7a7;
+  --white: #f1f1f1;
+  --font-family: "Lato", Lato, Arial, sans-serif;
+}
+
 /* (A) ENTIRE PAGE */
-#cal-wrap * { font-family: arial, sans-serif; }
-.ninja { display: none !important; }
+#cal-wrap * {
+  font-family: arial, sans-serif;
+}
+.ninja {
+  display: none !important;
+}
 
 /* (B) CONTAINER */
-#cal-wrap { max-width: 600px; }
+#cal-wrap {
+  max-width: 600px;
+  margin: 0 auto 50px;
+}
 
 /* (C) PERIOD SELECTOR */
-#cal-date { display: flex; }
-#cal-mth, #cal-yr {
+#cal-date {
+  display: flex;
+}
+#cal-mth,
+#cal-yr {
   box-sizing: border-box;
   padding: 10px 20px;
   font-size: 1.2em;
@@ -22,53 +41,53 @@
 #calendar tr.head td {
   font-weight: bold;
   text-transform: uppercase;
-  color: #fff;
-  background: #f37070;
+  color: var(--white);
+  background: var(--red);
   padding: 15px;
   text-align: center;
 }
 #calendar tr.day td {
-  border: 1px solid #ddd;
+  border: 1px solid var(--white);
   width: 14.28%;
   padding: 15px 5px;
   vertical-align: top;
 }
 #calendar tr.day td:hover {
-  background: #fff9e4;
+  background: var(--light-grey);
   cursor: pointer;
 }
 #calendar tr td.blank {
-  background: #f5f5f5;
+  background: var(--light-grey);
 }
 #calendar tr td.today {
-  background: #ffdede;
+  background: var(--grey);
 }
 #calendar .dd {
   font-size: 1.2em;
-  color: #999;
+  color: var(--white);
 }
 #calendar .evt {
   margin-top: 5px;
   font-size: 0.8em;
   font-weight: bold;
   overflow: hidden;
-  color: #ff5d5d;
+  color: var(--red);
 }
 
 /* (E) ADD/EDIT EVENT */
 #cal-event {
   padding: 15px;
   margin-top: 20px;
-  background: #f5f5f5;
-  border: 1px solid #ddd;
+  background: var(--white);
+  border: 1px solid var(--white);
 }
 #cal-event h1 {
-  color: #333;
+  color: var(--black);
   padding: 0;
   margin: 0;
 }
 #evt-date {
-  color: #555;
+  color: var(--black);
   margin: 10px 0;
 }
 #cal-event textarea {
@@ -77,14 +96,15 @@
   width: 100%;
   padding: 10px;
   margin: 10px 0;
-  border: 1px solid #ddd;
+  border: 1px solid var(--black);
   min-height: 100px;
 }
-#cal-event input[type=button], #cal-event input[type=submit] {
+#cal-event input[type="button"],
+#cal-event input[type="submit"] {
   padding: 10px;
   margin: 5px;
   font-size: 1.2em;
   border: 0;
-  background: #ea4c4c;
-  color: #fff;
+  background: var(--red);
+  color: var(--white);
 }
