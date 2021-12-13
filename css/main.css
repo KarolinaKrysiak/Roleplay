@@ -461,16 +461,19 @@ li:before {
   padding: 1em;
   gap: 1em;
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 40px auto;
 }
 
-.gallery-content div {
-  width: 100%;
-}
-.gallery-content div img{
-  
+.gallery-content a {}
+
+.gallery-content img {
+  object-fit: contain;
+  transition: 0.5s;
 }
 
+.gallery-content img:hover {
+  transform: scale(1.1);
+}
 
 /*Info*/
 .newsletter-container {
@@ -675,5 +678,13 @@ footer h4 {
 @media (max-width: 900px) {
   .footer-elements {
     flex-direction: column;
+  }
+
+  .gallery-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 1em;
+    gap: 1em;
+    margin: 40px auto;
   }
 }

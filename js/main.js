@@ -150,7 +150,9 @@ function appendMembers(members) {
 
 
 
-
+/*
+Displays more image gallery from JSON on scroll
+*/
 const URL =
   "json/data.json";
 document.addEventListener("DOMContentLoaded", () => {
@@ -162,34 +164,37 @@ document.addEventListener("DOMContentLoaded", () => {
   };
   const observer = new IntersectionObserver(handleIntersect, options);
   observer.observe(document.querySelector("footer"));
-  //an initial load of some data
   getData();
 });
 
 function handleIntersect(entries) {
   if (entries[0].isIntersecting) {
-    console.warn("something is intersecting with the viewport");
     getData();
   }
 }
 
-
+/*
+Loops through elements fetched from JSON and assigns attributes to them
+*/
 function setClass() {
   let x = document.getElementById("content");
   let y = x.getElementsByTagName("a");
   let i;
   for (i = 0; i < y.length; i++) {
-    y[i].setAttribute("href", "https://gifimage.net/wp-content/uploads/2018/04/rick-astley-dancing-gif-7.gif");
+    y[i].setAttribute("href", "??????????????????????");
+    y[i].setAttribute("data-lightbox", "mygallery");
   }
 }
 
-
+/*
+Creates DOM elements from data fetched from JSON
+*/
 function getData() {
   let content = document.getElementById("content");
   fetch(URL)
     .then(response => response.json())
     .then(data => {
-      // data.items[].img, data.items[].name
+
       data.items.forEach(item => {
         let imageContainer = document.createElement("a");
         let img = document.createElement("img");
