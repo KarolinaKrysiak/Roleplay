@@ -1,0 +1,31 @@
+{
+    "items": [{
+            "id": "0",
+            "img": "img/f2.JPG"
+        },
+        {
+            "id": "1",
+            "img": "img/f3.jpg"
+        },
+        {
+            "id": "2",
+            "img": "img/g2.jpg"
+        },
+        {
+            "id": "3",
+            "img": "img/g2.jpg"
+        },
+        {
+            "id": "4",
+            "img": "img/g2.jpg"
+        },
+        {
+            "id": "5",
+            "img": "img/g2.jpg"
+        },
+        {
+            "id": "6",
+            "img": "img/g2.jpg"
+        }
+    ]
+}
