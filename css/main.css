@@ -450,6 +450,12 @@ li:before {
   margin: 0 auto 50px;
 }
 
+@media (max-width: 600px) {
+  #characters-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 .character-pic {
   height: 300px;
   width: auto;
@@ -475,4 +481,10 @@ footer {
 .footer-map {
   width: 20%;
   height: 20%;
+}
+
+@media (max-width: 900px) {
+  .footer-elements {
+    flex-direction: column;
+  }
 }
