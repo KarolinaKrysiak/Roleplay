@@ -13,9 +13,9 @@ function closeNavX() {
 function closeNav() {
   document.getElementById("myNav").style.width = "0%";
   window.scroll({
-    top: 0, 
-    left: 0, 
-   });
+    top: 0,
+    left: 0,
+  });
 }
 
 /*--------------------------------------------*/
