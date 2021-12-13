@@ -91,21 +91,28 @@ li:before {
 /* ---------- navbar ---------- */
 
 .navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
   background-color: var(--black);
   box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.3);
-}
-
-.logo {
-  height: 50px;
 }
 
 .navbar a {
   float: left;
   color: var(--white);
   text-align: center;
-  padding: 14px 16px;
+  padding: 18px;
   text-decoration: none;
+  margin: 13px 0;
+}
+
+.logo {
+  position: absolute;
+  top: 5px;
+  left: 70px;
+  height: 70px;
 }
 
 .dropdown {
@@ -118,10 +125,10 @@ li:before {
   border: none;
   outline: none;
   color: var(--white);
-  padding: 14px 16px;
+  padding: 18px;
   background-color: inherit;
   font-family: inherit;
-  margin: 0;
+  margin: 13px 0;
 }
 
 .nav-hover:hover {
@@ -161,7 +168,7 @@ li:before {
 .membership {
   position: absolute;
   top: -8px;
-  right: 10px;
+  right: 0;
   height: 100px;
 }
 
