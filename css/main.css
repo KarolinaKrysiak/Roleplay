@@ -78,6 +78,7 @@ p {
   max-width: 600px;
   color: var(--white);
 }
+
 ul {
   list-style-type: none;
 }
@@ -450,14 +451,25 @@ li:before {
   background-size: cover;
 }
 
+/*Gallery*/
+#content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  padding: 1em;
+  gap: 1em;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+
+/*Info*/
 .newsletter-container {
   background-image: url("../img/fightclub.JPG");
   max-width: 600px;
   margin: 100px auto;
 }
 
-.newsletter-container button {
-}
+.newsletter-container button {}
 
 /*Contact*/
 .headquarters {
@@ -475,11 +487,9 @@ li:before {
   display: flex;
 }
 
-.single-member-image {
-}
+.single-member-image {}
 
-.single-member-text {
-}
+.single-member-text {}
 
 /*Map*/
 #map {
