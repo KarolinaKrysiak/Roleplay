@@ -1,31 +1,34 @@
 "use strict";
 
 /*
-global variable: _allEvents
+global variables
 */
 let _allEvents = [];
 let _characters = [];
 let _selectedCharacter = [];
+let _allMembers = [];
+
+
 
 /*
-Fetches json data from the file members.json
+Fetches json data from the file events.json
 */
 
-async function fetchMembers() {
-  let response = await fetch('json/members.json');
+async function fetchEvents() {
+  let response = await fetch('json/events.json');
   let data = await response.json();
   _allEvents = data;
   appendEvents(_allEvents);
 }
 
-fetchMembers();
+fetchEvents();
 
 /*
 Appends json data to the DOM
 */
-function appendEvents(members) {
+function appendEvents(events) {
   let htmlTemplate = "";
-  for (let event of members) {
+  for (let event of events) {
     htmlTemplate += /*html*/ `
       <section class="activity-section" style="height:450px">
         <div class="half-activity-section">
@@ -42,12 +45,16 @@ function appendEvents(members) {
           <a href="${event.link}"><img class="btn" src="icons/btn.png"></a>
         </div>
   </section>
-  <img alt="grey line" src="icons/line.png" class="line-members">
+  <img alt="grey line" src="icons/line.png" class="line-events">
 
     `;
   }
   document.querySelector("#event-section").innerHTML = htmlTemplate;
 }
+
+
+
+
 
 /*
 Fetches json data from the file characters.json
@@ -103,16 +110,14 @@ function showDetailView(id) {
 
 
 
-/*
-global variable: _allMembers
-*/
-let _allMembers = [];
-/**/
+
+
+/*Fetches json data from the file members.json*/
 async function fetchMembers() {
   let response = await fetch('json/members.json');
   let data = await response.json();
   _allMembers = data;
-  appendEvents(_allMembers);
+  appendMembers(_allMembers);
 }
 
 fetchMembers();
@@ -120,7 +125,7 @@ fetchMembers();
 /*
 Appends json data to the DOM
 */
-function appendEvents(members) {
+function appendMembers(members) {
   let htmlTemplate = "";
   for (let member of members) {
     htmlTemplate += /*html*/ `
