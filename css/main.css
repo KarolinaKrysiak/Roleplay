@@ -647,7 +647,9 @@ footer h4 {
 
 /* facebook part */
 .fb-group {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 300px;
   height: 300px;
   background-color: var(--white);
@@ -656,7 +658,7 @@ footer h4 {
 
 .fb-img-container {
   width: 300px;
-  height: 150px;
+  height: 125px;
   border-radius: 3px;
 }
 
@@ -665,6 +667,42 @@ footer h4 {
   width: 100%;
   object-fit: cover;
   border-radius: 3px;
+}
+
+.fb-group h6 {
+  font-size: 20px;
+  margin-top: 5px;
+  color: var(--black);
+  font-weight: bold;
+}
+
+.fb-group span {
+  color: #cacaca;
+}
+
+.fb-group p {
+  color: var(--black);
+  padding: 5px;
+  margin-bottom: 15px;
+}
+
+.fb-button {
+  background-color: #3a5a97;
+  text-decoration: none;
+  color: var(--white);
+  padding: 5px 100px;
+  margin: auto;
+  text-align: center;
+  max-width: 300px;
+  margin: auto;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.fb-line {
+  width: 100%;
+  height: 1px;
+  background-color: #cacaca;
 }
 
 /* map part */
