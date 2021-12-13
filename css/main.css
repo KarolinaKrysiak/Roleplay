@@ -233,7 +233,7 @@ li:before {
 /* Position the content inside the overlay */
 .overlay-content {
   position: relative;
-  top: 25%;
+  top: 15%;
   width: 100%;
   text-align: center;
   margin-top: 30px;
@@ -263,6 +263,10 @@ li:before {
   top: 20px;
   right: 45px;
   font-size: 60px;
+}
+
+.mobile-membership {
+  height: 100px;
 }
 
 @media screen and (max-height: 450px) {
