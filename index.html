@@ -73,21 +73,58 @@
         <!-- Overlay content -->
         <div class="overlay-content">
           <a href="/">Home</a>
-          <a href="#fight-club" onclick="closeNav()">Fight Club</a>
-          <a href="#larp" onclick="closeNav()">LARP</a>
-          <a href="#games" onclick="closeNav()">Tabletop Games</a>
-          <a href="#workshops" onclick="closeNav()">Workshops</a>
+          <span onclick="openNav1()">Activities</span>
           <a href="#events" onclick="closeNav()">Events</a>
-          <a href="#niebelungen" onclick="closeNav()">Niebelungen</a>
-          <a href="#other" onclick="closeNav()">Other</a>
+          <span onclick="openNav2()">Lore</span>
           <a href="#gallery" onclick="closeNav()">Gallery</a>
-          <a href="#info" onclick="closeNav()">Practical Information</a>
-          <a href="#contact" onclick="closeNav()">Contact</a>
-          <a href="#team" onclick="closeNav()">The Team</a>
+          <span onclick="openNav3()">About</span>
           <a href="https://www.foreninglet.dk/teamenrollment/index/092039734f60d5d/8415"><img class="mobile-membership"
               src="icons/membership.png" alt="Become member button"></a>
         </div>
       </div>
+
+      <!-- The overlay -->
+      <div id="myNav1" class="overlay">
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNavX1()">&times;</a>
+        <!-- Overlay content -->
+        <div class="overlay-content">
+          <a href="#fight-club" onclick="closeNav1()">Fight Club</a>
+          <a href="#larp" onclick="closeNav1()">LARP</a>
+          <a href="#games" onclick="closeNav1()">Tabletop Games</a>
+          <a href="#workshops" onclick="closeNav1()">Workshops</a>
+          <a href="https://www.foreninglet.dk/teamenrollment/index/092039734f60d5d/8415"><img class="mobile-membership"
+              src="icons/membership.png" alt="Become member button"></a>
+        </div>
+      </div>
+
+      <!-- The overlay -->
+      <div id="myNav2" class="overlay">
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNavX2()">&times;</a>
+        <!-- Overlay content -->
+        <div class="overlay-content">
+          <a href="#niebelungen" onclick="closeNav2()">Niebelungen</a>
+          <a href="#other" onclick="closeNav2()">Other</a>
+          <a href="https://www.foreninglet.dk/teamenrollment/index/092039734f60d5d/8415"><img class="mobile-membership"
+              src="icons/membership.png" alt="Become member button"></a>
+        </div>
+      </div>
+
+      <!-- The overlay -->
+      <div id="myNav3" class="overlay">
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNavX3()">&times;</a>
+        <!-- Overlay content -->
+        <div class="overlay-content">
+          <a href="#info" onclick="closeNav3()">Practical Information</a>
+          <a href="#contact" onclick="closeNav3()">Contact</a>
+          <a href="#team" onclick="closeNav3()">The Team</a>
+          <a href="https://www.foreninglet.dk/teamenrollment/index/092039734f60d5d/8415"><img class="mobile-membership"
+              src="icons/membership.png" alt="Become member button"></a>
+        </div>
+      </div>
+
     </div>
 
   </header>
