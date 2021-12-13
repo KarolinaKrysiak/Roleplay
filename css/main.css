@@ -455,13 +455,20 @@ li:before {
 }
 
 /*Gallery*/
-#content {
+.gallery-content {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   padding: 1em;
   gap: 1em;
   max-width: 1000px;
   margin: 0 auto;
+}
+
+.gallery-content div {
+  width: 100%;
+}
+.gallery-content div img{
+  
 }
 
 
