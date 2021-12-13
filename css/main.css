@@ -164,6 +164,118 @@ li:before {
   height: 100px;
 }
 
+@media (max-width: 900px) {
+  .navbar {
+    display: none;
+  }
+}
+
+/* ---------- mobile navbar ---------- */
+
+.mobile-menu {
+  position: fixed;
+  z-index: 50;
+  width: 100%;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+}
+
+.mobile-logo {
+  height: 70px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+.burger-menu {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 30px;
+  cursor: pointer;
+}
+
+.burger-menu span {
+  width: 40px;
+  height: 5px;
+  display: block;
+  background: var(--white);
+}
+.burger-menu:hover span {
+  background: var(--red);
+}
+
+@media (min-width: 900px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+
+/* ---- overlay ----*/
+
+/* The Overlay (background) */
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 9999;
+  right: 0;
+  top: 0;
+  background-color: var(--black);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* The navigation links inside the overlay */
+.overlay a,
+.overlay span {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: var(--white);
+  display: block;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.overlay a:hover,
+.overlay a:focus,
+.overlay span:hover,
+.overlay span:focus {
+  color: var(--red);
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
 /*------------- old paper page ------------*/
 
 .papirus {
