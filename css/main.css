@@ -266,7 +266,14 @@ li:before {
 }
 
 .mobile-membership {
-  height: 100px;
+  width: 350px;
+  display: block;
+  margin: 10px auto;
+}
+@media (min-width: 900px) {
+  .mobile-membership {
+    display: none;
+  }
 }
 
 @media screen and (max-height: 450px) {
