@@ -74,12 +74,14 @@ function appendCharacters(characters) {
   let htmlTemplate = "";
   for (let character of characters) {
     htmlTemplate += /*html*/ `
-      <article>
-        <article onclick="showDetailView(${character.id})">
-          <img src="${character.img}">
+      
+        <article class="character-article" onclick="showDetailView(${character.id})">
+          <div class="character-div">
+          <img class="character-pic" src="${character.img}">
+  </div>
           <h5>${character.name}</h5>
         </article>
-      </article>
+    
     `;
   }
   document.querySelector('#characters-grid').innerHTML = htmlTemplate;

@@ -436,6 +436,25 @@ li:before {
 
 /* ------------ niebelungen page ------------ */
 
+.characters {
+  margin: 100px;
+  text-align: center;
+}
+
+#characters-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 1em;
+  gap: 1em;
+  max-width: 1000px;
+  margin: 0 auto 50px;
+}
+
+.character-pic {
+  height: 300px;
+  width: auto;
+}
+
 /* ------------ footer styling------------ */
 
 footer {

@@ -1,7 +1,7 @@
 [
     {
         "id": 0,
-        "img":"#",
+        "img":"img/baron.jpg",
       "name": "Baron Samedi",
       "occupation": "Lord of the dead and fertility",
       "skills": "Necromancy, Black magic, teleportation, revive, license inventions of blue magic, healing powers",
@@ -16,7 +16,7 @@
     },
     {
         "id": 1,
-        "img":"#",
+        "img":"img/baron.jpg",
         "name": "Demon Squad",
         "occupation": "occult, paranormal and supernatural phenomena",
         "skills": "curses, sorcery, witchcraft",
@@ -30,7 +30,7 @@
     },
     {
         "id": 2,
-        "img":"#",
+        "img":"img/baron.jpg",
         "name": "Kromutter",
         "occupation": "Goblin Shaman and chrome nut",
         "skills": "Goblin Shaman, magic, spiritual guidance, interpretation of nature's warnings, lvaer mixture and healing ointment for the wounded; abilities as a shape changer",
