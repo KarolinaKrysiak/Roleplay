@@ -47,6 +47,7 @@ h1 {
   font-family: "IMMORTAL";
   font-size: 60px;
   color: var(--white);
+  margin-bottom: 30px;
 }
 
 h2 {
@@ -86,6 +87,12 @@ ul {
 li:before {
   content: "➼";
   padding-right: 10px;
+}
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: 40px;
+  }
 }
 
 /* ---------- navbar ---------- */
@@ -726,5 +733,14 @@ footer h4 {
 @media (max-width: 900px) {
   .footer-elements {
     flex-direction: column;
+  }
+
+  .fb-group {
+    margin: auto;
+    margin-bottom: 30px;
+  }
+
+  .fb-button {
+    padding: 5px 90px;
   }
 }
