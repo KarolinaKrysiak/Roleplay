@@ -18,6 +18,64 @@ function closeNav() {
   });
 }
 
+/*--------------------------------------------*/
+function openNav1() {
+  document.getElementById("myNav1").style.width = "100%";
+}
+
+/* Close when someone clicks on the "x" symbol inside the overlay */
+function closeNavX1() {
+  document.getElementById("myNav1").style.width = "0%";
+}
+
+/* Close when someone clicks on the lnk inside the overlay */
+function closeNav1() {
+  document.getElementById("myNav1").style.width = "0%";
+  window.scroll({
+    top: 0, 
+    left: 0, 
+   });
+}
+
+/*--------------------------------------------*/
+function openNav2() {
+  document.getElementById("myNav2").style.width = "100%";
+}
+
+/* Close when someone clicks on the "x" symbol inside the overlay */
+function closeNavX2() {
+  document.getElementById("myNav2").style.width = "0%";
+}
+
+/* Close when someone clicks on the lnk inside the overlay */
+function closeNav2() {
+  document.getElementById("myNav2").style.width = "0%";
+  window.scroll({
+    top: 0, 
+    left: 0, 
+   });
+}
+
+/*--------------------------------------------*/
+function openNav3() {
+  document.getElementById("myNav3").style.width = "100%";
+}
+
+/* Close when someone clicks on the "x" symbol inside the overlay */
+function closeNavX3() {
+  document.getElementById("myNav3").style.width = "0%";
+}
+
+/* Close when someone clicks on the lnk inside the overlay */
+function closeNav3() {
+  document.getElementById("myNav3").style.width = "0%";
+  window.scroll({
+    top: 0, 
+    left: 0, 
+   });
+}
+
+
 /*
 global variables
 */
