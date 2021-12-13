@@ -23,7 +23,6 @@
 }
 
 /* ---------- general styling ---------- */
-
 html {
   color: var(--text-color-light);
   font-family: var(--font-family);
@@ -96,7 +95,6 @@ li:before {
 }
 
 /* ---------- navbar ---------- */
-
 .navbar {
   display: flex;
   justify-content: center;
@@ -576,7 +574,6 @@ li:before {
   .activity-section {
     flex-direction: column-reverse;
     height: 100%;
-    padding:
   }
 
   .reverse {
