@@ -8,24 +8,24 @@ let _characters = [];
 let _selectedCharacter = [];
 
 /*
-Fetches json data from the file events.json
+Fetches json data from the file members.json
 */
 
-async function fetchEvents() {
-  let response = await fetch('json/events.json');
+async function fetchMembers() {
+  let response = await fetch('json/members.json');
   let data = await response.json();
   _allEvents = data;
   appendEvents(_allEvents);
 }
 
-fetchEvents();
+fetchMembers();
 
 /*
 Appends json data to the DOM
 */
-function appendEvents(events) {
+function appendEvents(members) {
   let htmlTemplate = "";
-  for (let event of events) {
+  for (let event of members) {
     htmlTemplate += /*html*/ `
       <section class="activity-section" style="height:450px">
         <div class="half-activity-section">
@@ -42,7 +42,7 @@ function appendEvents(events) {
           <a href="${event.link}"><img class="btn" src="icons/btn.png"></a>
         </div>
   </section>
-  <img alt="grey line" src="icons/line.png" class="line-events">
+  <img alt="grey line" src="icons/line.png" class="line-members">
 
     `;
   }
@@ -66,7 +66,7 @@ fetchData();
 function appendCharacters(characters) {
   let htmlTemplate = "";
   for (let character of characters) {
-    htmlTemplate += /*html*/`
+    htmlTemplate += /*html*/ `
       <article>
         <article onclick="showDetailView(${character.id})">
           <img src="${character.img}">
@@ -86,7 +86,7 @@ function showDetailView(id) {
   _selectedCharacter = id;
   const characterToShow = _characters.find(character => character.id === id);
   navigateTo("detail-view");
-  document.querySelector("#detail-view-container").innerHTML = /*html*/`
+  document.querySelector("#detail-view-container").innerHTML = /*html*/ `
     
     <article>
     <img src="${characterToShow.img}">
@@ -104,34 +104,34 @@ function showDetailView(id) {
 
 
 /*
-global variable: _allEvents
+global variable: _allMembers
 */
-let _allEvents = [];
+let _allMembers = [];
 /**/
-async function fetchEvents() {
-  let response = await fetch('json/events.json');
+async function fetchMembers() {
+  let response = await fetch('json/members.json');
   let data = await response.json();
-  _allEvents = data;
-  appendEvents(_allEvents);
+  _allMembers = data;
+  appendEvents(_allMembers);
 }
 
-fetchEvents();
+fetchMembers();
 
 /*
 Appends json data to the DOM
 */
-function appendEvents(events) {
+function appendEvents(members) {
   let htmlTemplate = "";
-  for (let event of events) {
+  for (let member of members) {
     htmlTemplate += /*html*/ `
       
         <div class="single-member">
           <div class="single-member-image">
-            <img alt="team-member" src="${event.img}" >
+            <img alt="team-member" src="${member.img}" >
           </div>
           <div class="single-member-text">
-            <h4>${event.name}</h4>
-            <p>${event.description}</p>
+            <h4>${member.name}</h4>
+            <p>${member.description}</p>
           </div>
         </div>
      

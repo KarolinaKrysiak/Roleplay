@@ -314,8 +314,7 @@ p {
   margin: 100px auto;
 }
 
-.newsletter-container button {
-}
+.newsletter-container button {}
 
 /*Contact*/
 .headquarters {
@@ -324,18 +323,18 @@ p {
 
 /*Team*/
 .members {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .single-member {
   display: flex;
 }
 
-.single-member-image {
-}
+.single-member-image {}
 
-.single-member-text {
-}
+.single-member-text {}
 
 /*Map*/
 #map {
@@ -438,4 +437,9 @@ footer {
 
 .footer-element {
   margin: 0 30px;
+}
+
+.footer-map {
+  width: 20%;
+  height: 20%;
 }
