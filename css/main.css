@@ -314,7 +314,8 @@ p {
   margin: 100px auto;
 }
 
-.newsletter-container button {}
+.newsletter-container button {
+}
 
 /*Contact*/
 .headquarters {
@@ -330,9 +331,11 @@ p {
   display: flex;
 }
 
-.single-member-image {}
+.single-member-image {
+}
 
-.single-member-text {}
+.single-member-text {
+}
 
 /*Map*/
 #map {

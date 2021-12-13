@@ -4,6 +4,8 @@
 global variable: _allEvents
 */
 let _allEvents = [];
+let _characters = [];
+let _selectedCharacter = [];
 
 /*
 Fetches json data from the file events.json
@@ -45,6 +47,58 @@ function appendEvents(events) {
     `;
   }
   document.querySelector("#event-section").innerHTML = htmlTemplate;
+}
+
+/*
+Fetches json data from the file characters.json
+*/
+async function fetchData() {
+  const response = await fetch('json/characters.json');
+  const data = await response.json();
+  _characters = data;
+  console.log(_characters);
+  appendCharacters(_characters);
+
+}
+
+fetchData();
+
+function appendCharacters(characters) {
+  let htmlTemplate = "";
+  for (let character of characters) {
+    htmlTemplate += /*html*/`
+      <article>
+        <article onclick="showDetailView(${character.id})">
+          <img src="${character.img}">
+          <h5>${character.name}</h5>
+        </article>
+      </article>
+    `;
+  }
+  document.querySelector('#characters-grid').innerHTML = htmlTemplate;
+}
+
+/*
+Shows detailed view
+*/
+
+function showDetailView(id) {
+  _selectedCharacter = id;
+  const characterToShow = _characters.find(character => character.id === id);
+  navigateTo("detail-view");
+  document.querySelector("#detail-view-container").innerHTML = /*html*/`
+    
+    <article>
+    <img src="${characterToShow.img}">
+      <h2>${characterToShow.name}</h2>
+      <p>${characterToShow.occupation}</p>
+      <p>${characterToShow.skills}</p>
+      <p>${characterToShow.hobbies}</p>
+      <p>${characterToShow.alignment}</p>
+      <p>${characterToShow.type}</p>
+      <p>${characterToShow.description}</p>
+    </article>
+  `;
 }
 
 
