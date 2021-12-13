@@ -464,7 +464,6 @@ li:before {
   margin: 0 auto;
 }
 
-
 /*Info*/
 .newsletter-container {
   background-image: url("../img/fightclub.JPG");
@@ -472,7 +471,8 @@ li:before {
   margin: 100px auto;
 }
 
-.newsletter-container button {}
+.newsletter-container button {
+}
 
 /*Contact*/
 .headquarters {
@@ -490,9 +490,11 @@ li:before {
   display: flex;
 }
 
-.single-member-image {}
+.single-member-image {
+}
 
-.single-member-text {}
+.single-member-text {
+}
 
 /*Map*/
 #map {
@@ -663,6 +665,15 @@ footer h4 {
 .footer-map {
   width: 20%;
   height: 20%;
+}
+
+/*copyright*/
+.copyright {
+  text-align: center;
+  font-size: 11px;
+  font-weight: lighter;
+  margin: auto;
+  padding-bottom: 10px;
 }
 
 @media (max-width: 900px) {
