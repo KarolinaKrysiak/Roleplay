@@ -145,3 +145,7 @@ function appendMembers(members) {
   }
   document.querySelector("#members").innerHTML = htmlTemplate;
 }
+
+
+/* -------- calendar ----------*/
+
