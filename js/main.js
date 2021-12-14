@@ -94,6 +94,8 @@ function closeNav3() {
 }
 
 
+
+
 /*
 global variables
 */
@@ -148,8 +150,6 @@ function appendEvents(events) {
 
 
 
-
-
 /*
 Fetches json data from the file characters.json
 */
@@ -168,39 +168,44 @@ function appendCharacters(characters) {
   let htmlTemplate = "";
   for (let character of characters) {
     htmlTemplate += /*html*/ `
-      <article>
-        <article onclick="showDetailView(${character.id})">
-          <img src="${character.img}">
+      
+        <article  id="myBtn">
+          <div class="character-pic-container">
+            <img  class="character-pic" src="${character.img}">
+          </div>
           <h5>${character.name}</h5>
+          <div id="myModal" class="modal">
+
+            <div id="sheetClose" class="modal-content">
+              <span  onclick="closeSheet()" class="close">&times;</span>
+                <div class="character-sheet">
+                  <div class="description-top">
+                    <div class="character-pic-sheet">
+                  <img  class="character-pic" src="${character.img}">
+                    </div> 
+                  <div class="short-description">
+                      <h3>${character.name}</h3>
+                      <p>Occupation: ${character.occupation}</p>
+                      <p>Skills: ${character.skills}</p>
+                      <p> Hobbies: ${character.hobbies}</p>
+                      <p>Alignment: ${character.alignment}</p>
+                      <p>${character.alignment} type: ${character.type}</p>
+                    </div>
+                  </div>
+                  <p class="description-bottom">${character.description}</p>
+                </div>
+
+            </div>
+          </div>
         </article>
-      </article>
+        
+
     `;
   }
   document.querySelector('#characters-grid').innerHTML = htmlTemplate;
 }
 
-/*
-Shows detailed view
-*/
 
-function showDetailView(id) {
-  _selectedCharacter = id;
-  const characterToShow = _characters.find(character => character.id === id);
-  navigateTo("detail-view");
-  document.querySelector("#detail-view-container").innerHTML = /*html*/ `
-    
-    <article>
-    <img src="${characterToShow.img}">
-      <h2>${characterToShow.name}</h2>
-      <p>${characterToShow.occupation}</p>
-      <p>${characterToShow.skills}</p>
-      <p>${characterToShow.hobbies}</p>
-      <p>${characterToShow.alignment}</p>
-      <p>${characterToShow.type}</p>
-      <p>${characterToShow.description}</p>
-    </article>
-  `;
-}
 
 
 
@@ -299,4 +304,35 @@ function getData() {
         setClass();
       });
     });
+}
+
+window.onload = function(){ 
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+}
+function closeSheet() {
+  document.getElementById("sheetClose").style.display = "none";
+
+  
 }
